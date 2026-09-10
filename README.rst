@@ -16,6 +16,10 @@ cryoSBI - Simulation-based Inference for Cryo-EM
     :target: https://github.com/Dingel321/cryoSBI_classifier/actions/workflows/python-package.yml
 
 
+This repository is a standalone version of
+`cryoSBI <https://github.com/flatironinstitute/cryoSBI>`_ for discrete
+posterior distributions.
+
 ``cryoSBI`` trains a classifier on simulated cryo-EM micrographs to identify
 which structural model best explains each observed particle. Simulation,
 training, and inference are configured via `Hydra <https://hydra.cc/>`_
