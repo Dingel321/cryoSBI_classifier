@@ -20,7 +20,7 @@ This repository is a standalone version of
 `cryoSBI <https://github.com/flatironinstitute/cryoSBI>`_ for discrete
 posterior distributions.
 
-``cryoSBI`` trains a classifier on simulated cryo-EM micrographs to identify
+``cryoSBI_classifier`` trains a classifier on simulated cryo-EM micrographs to identify
 which structural model best explains each observed particle. Simulation,
 training, and inference are configured via `Hydra <https://hydra.cc/>`_
 Structured Configs and dispatched as console scripts.
