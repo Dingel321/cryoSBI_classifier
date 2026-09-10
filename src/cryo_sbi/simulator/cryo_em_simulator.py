@@ -75,7 +75,7 @@ def image_formation(
     fg_density = project_density(
         fg_models, fg_quats, fg_sigma, fg_shift, num_pixels_padded, pixel_size
     )
-    
+
     # For garbage-class images, remove the centered foreground particle.
     # Otherwise garbage = foreground + clutter, which looks too similar to normal.
     if garbage_mask is not None:

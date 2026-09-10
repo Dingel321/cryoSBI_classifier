@@ -262,11 +262,8 @@ class MultiParticleImagePrior:
         self.min_garbage = min_garbage
         self.max_garbage = max_garbage
         # n_slots reserves enough background-particle storage for either real
-        # background images (n_bg_max slots) or garbage images (which use
-        # max_garbage-1 slots, since the foreground occupies one of them).
-        #self.n_slots = max(n_bg_max, max_garbage - 1) if garbage_class else n_bg_max
-        
-        # changed so that garbage has no foreground particle
+        # background images (n_bg_max slots) or garbage images (max_garbage
+        # slots, since garbage images have no centered foreground particle).
         self.n_slots = max(n_bg_max, max_garbage) if garbage_class else n_bg_max
         # Make the garbage class as likely as any of the num_models real classes:
         # together they form a uniform (num_models + 1)-way distribution.
@@ -458,7 +455,7 @@ class MultiParticleImagePrior:
                         stacklevel=2,
                     )
                     break
-        
+
         return [fg_indices, fg_quats, fg_sigma, fg_shift,
                 fg_defocus, fg_b_factor, fg_amp, fg_snr,
                 bg_indices, bg_quats, bg_sigma, bg_centers, bg_mask,

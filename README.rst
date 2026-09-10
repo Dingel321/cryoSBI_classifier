@@ -11,9 +11,9 @@ cryoSBI - Simulation-based Inference for Cryo-EM
       - | |githubactions|
 
 
-.. |githubactions| image:: https://github.com/flatironinstitute/cryoSBI/actions/workflows/python-package.yml/badge.svg?branch=main
+.. |githubactions| image:: https://github.com/Dingel321/cryoSBI_classifier/actions/workflows/python-package.yml/badge.svg?branch=main
     :alt: Testing Status
-    :target: https://github.com/flatironinstitute/cryoSBI/actions
+    :target: https://github.com/Dingel321/cryoSBI_classifier/actions/workflows/python-package.yml
 
 
 ``cryoSBI`` trains a classifier on simulated cryo-EM micrographs to identify

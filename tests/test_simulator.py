@@ -126,9 +126,13 @@ def test_garbage_prior_produces_garbage_images():
 
 
 def test_garbage_n_slots():
-    """n_slots should accommodate both n_bg_max and max_garbage - 1."""
+    """n_slots should accommodate both n_bg_max and max_garbage.
+
+    Garbage images have no centered foreground particle, so all max_garbage
+    clutter particles need a background slot.
+    """
     sim = CryoEmSimulator(GARBAGE_CONFIG)
-    expected = max(GARBAGE_CONFIG["n_bg_max"], GARBAGE_CONFIG["max_garbage"] - 1)
+    expected = max(GARBAGE_CONFIG["n_bg_max"], GARBAGE_CONFIG["max_garbage"])
     assert sim._priors.n_slots == expected
     assert sim._n_bg_max == expected
 

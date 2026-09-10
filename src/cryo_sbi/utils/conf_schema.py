@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import List, Optional, Union
+from typing import List, Optional
 from omegaconf import MISSING
 from hydra.core.config_store import ConfigStore
 
