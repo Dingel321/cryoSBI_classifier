@@ -48,8 +48,8 @@ pdb = ["MDAnalysis>=2.4"]
 
 
 [project.urls]
-Homepage = "https://github.com/flatironinstitute/cryoSBI"
-Repository = "https://github.com/flatironinstitute/cryoSBI"
+Homepage = "https://github.com/flatironinstitute/cryoSBI_classifier"
+Repository = "https://github.com/flatironinstitute/cryoSBI_classifier"
 
 
 [project.scripts]
